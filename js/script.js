@@ -3,6 +3,7 @@
 // Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 
 $(document).ready(function() {
+
   var student = {
     'name' : 'Bart',
     'surname' : 'Simpson',
@@ -12,4 +13,28 @@ $(document).ready(function() {
   for (var info in student) {
     console.log(student[info]);
   }
+
+  var studentsList = [
+    {
+      'name' : 'Milhouse',
+      'surname' : 'Van Houten',
+      'age' : 10
+    },
+    {
+      'name' : 'Ralph',
+      'surname' : 'Winchester',
+      'age' : 9
+    },
+    {
+      'name' : 'Secco',
+      'surname' : 'Jones',
+      'age' : 19
+    }
+
+  ];
+
+  for (var i = 0; i < studentsList.length; i++) {
+    console.log(studentsList[i].name + ' ' + studentsList[i].surname);
+  }
+
 });
