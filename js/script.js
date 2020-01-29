@@ -14,6 +14,8 @@ $(document).ready(function() {
     console.log(student[info]);
   }
 
+  //
+
   var studentsList = [
     {
       'name' : 'Milhouse',
@@ -37,4 +39,18 @@ $(document).ready(function() {
     console.log(studentsList[i].name + ' ' + studentsList[i].surname);
   }
 
+  // 
+
+  var name = prompt('Inserisci il nome');
+  var surname = prompt('Inserisci il cognome');
+  var age = parseInt(prompt('Inserisci l\'età'));
+
+  var newStudent = {
+    'name' : name,
+    'surname' : surname,
+    'age' : age
+  };
+
+  studentsList.push(newStudent);
+  console.log(studentsList);
 });
